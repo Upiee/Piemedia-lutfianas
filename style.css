@@ -1,0 +1,215 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+ 
+header {
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;   
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+.logo-title {
+    cursor: pointer;
+    transition: all .5s;
+    font-size: larger;
+    margin: 5px;
+  }
+
+.logo:hover {
+    color: #ff6a3d;
+    transform: rotate(2deg);
+}
+
+
+.btn-cta{
+    margin-right: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: #ff6a3d;
+    color: #eaeaea;
+    border-radius: 10px;
+    padding: 12px 6px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px; 
+}
+
+li a{
+    display: inline-block;
+    transition: all .5s;
+}
+
+li a:hover{
+    color: #ff6a3d;
+    transform: rotate(2deg);  
+}
+
+a {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;    
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.foto {
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.parallax {
+    background-image: url('assets/parallax..jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.deskrip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1a2338;
+    color: #eaeaea;
+    padding: 80px;
+}
+
+.work {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: #ff6a3d;
+    color: #eaeaea;
+    border-radius: 10px;
+    padding: 12px 6px;
+    cursor: pointer;
+}
+
+.mt-10 {
+    margin-top: 50px;
+}
+
+#posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#showing-info {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+    text-align: justify;
+}
+
+#perPage {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+
+.post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-card p {
+    text-align: center;
+    font-size: small;
+}
+
+.post-card h2 {
+    padding: 15px;
+    font-size: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 500px ){
+    .card{
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item {
+        width: 100%;
+        opacity: 0,9;
+    }
+
+    .container {
+		width: 100%;
+		padding: 0;
+	}
+
+    .intro {
+        margin-top: 20px;
+    }
+	
+    
+}
